@@ -48,7 +48,6 @@ public class BinaryGameController : MonoBehaviour
 
         tapeManager.GenerateTape(currentBinary);
 
-        // Reset head to rightmost cell after tape generation
         var head = FindFirstObjectByType<TuringHead>();
         if (head != null)
             head.ResetToRightmost();
@@ -127,4 +126,5 @@ public class BinaryGameController : MonoBehaviour
             GenerateLevel(currentLevel);
         }
     }
+
 }
